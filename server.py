@@ -1,7 +1,7 @@
 import socket
 import threading
 import sys
-BUF_SIZ
+BUF_SIZ = 1024
 reply_dic = {'black':'white', 'yin':'yang', 'sun':'earth', 'batman': 'joker' }
 
 def handle_client(cli_s):
