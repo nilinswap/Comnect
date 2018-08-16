@@ -4,7 +4,8 @@ import sys
 BUF_SIZ = 1024
 reply_dic = {'black':'white', 'yin':'yang', 'sun':'earth', 'batman': 'joker' }
 
-def handle_client(cli_s):
+def handle_client(arg_tup):
+	cli_s = arg_tup[0]
 	st ='first'
 	while st:
 		st = cli_s.recv(BUF_SIZ)
