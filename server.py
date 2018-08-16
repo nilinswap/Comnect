@@ -27,7 +27,7 @@ request_id = 1
 serv_s = socket.socket( socket.AF_INET, socket.SOCK_STREAM)
 print("socket successfully created")
 port = 2020
-serv_s.bind((socket.gethostname(),port))
+serv_s.bind(("",port))
 
 serv_s.listen(5)
 thread_lis = []
