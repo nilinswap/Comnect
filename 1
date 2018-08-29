@@ -1,11 +1,20 @@
 import socket
 import sys, datetime
 
+<<<<<<< HEAD
 udp_ip_address = "172.20.51.18"
 udp_port_no = 2020
+=======
+udp_ip_address = "127.0.0.1"
+udp_port_no = 3030
+>>>>>>> 463a580fc030cad40237e933d1347f055854f62a
 message = "hello, server"
 
 clientsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+<<<<<<< HEAD
 clientsock.send(message.encode(), (udp_ip_address, udp_port_no))
+=======
+clientsock.send(message.encode(), (udp_id_address, udp_port_no))
+>>>>>>> 463a580fc030cad40237e933d1347f055854f62a
 

@@ -6,6 +6,6 @@ udp_port_no = 2020
 message = "hello, server"
 
 clientsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-clientsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+
 clientsock.sendto(message.encode(), (udp_ip_address, udp_port_no))
 
